@@ -1,0 +1,2907 @@
+
+ @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Signika:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap);
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0
+}
+body,
+html {
+	margin: 0;
+	padding: 0;
+	border: 0
+}
+* {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .004)
+}
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+body {
+	line-height: 1.5;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: none;
+	background: #fff;
+	overflow-y: scroll
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+ul li {
+	display: inline-block
+}
+a {
+	text-decoration: none
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	margin: 0;
+	line-height: 1
+}
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=text] {
+	border: none;
+	outline: 0
+}
+* {
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	padding: 0;
+	margin: 0
+}
+body {
+	background: #f2f5f6;
+	-webkit-tap-highlight-color: transparent
+}
+b {
+	font-weight: 600
+}
+b span {
+	font-weight: 600
+}
+.font-italic {
+	font-style: italic
+}
+.font-15 {
+	font-size: 15px
+}
+.font-18 {
+	font-size: 18px
+}
+input[type=tel]:disabled~label {
+	top: 10px!important;
+	font-size: 11px!important;
+	outline: 0!important;
+	color: #9c9c9c!important
+}
+input[type=tel]:disabled {
+	background: #fff!important;
+	color: #000!important
+}
+.load-amount {
+	display: inline-block!important;
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 0;
+	border-bottom: 1px solid #6e6f71!important;
+	padding: 3px 5px;
+	font-size: 14px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none
+}
+.custom-paypal-pop-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.59);
+    padding-top: 50px;
+    z-index: 20;
+    text-align: center;
+}
+.text-wrap {
+    position: relative;
+}
+
+.text-wrap input {
+    border-bottom: solid 1px #cbcbcb;
+    margin-top: 22px;
+}
+input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px solid #6e6f71;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    padding: 3px 5px;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.text-wrap {
+	position: relative
+}
+.text-wrap input {
+	border-bottom: solid 1px #cbcbcb;
+	margin-top: 22px
+}
+.text-wrap input:focus {
+	outline: 0
+}
+.text-wrap label {
+	color: #9c9c9c;
+	font-size: 13px;
+	font-weight: 400;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 24px!important;
+	transition: .2s ease all;
+	-moz-transition: .2s ease all;
+	-webkit-transition: .2s ease all
+}
+.text-wrap input:focus~label,
+.text-wrap input:valid~label {
+	top: 10px!important;
+	font-size: 11px;
+	color: #9c9c9c
+}
+.label-name {
+    display: inline-block;
+    margin-left: 25px;
+}
+#mainWrapper {
+    margin: 0!important;
+    padding: 0!important;
+}
+.empty-cart {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    z-index: 160;
+    top: 0;
+    left: 0;
+    background: #f8f8f8;
+    margin-top: 47px;
+}
+.empty-cart .empty-image {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25%;
+}
+.empty-cart .empty-image img {
+    width: 50%;
+}
+.empty-cart .empty-status {
+    overflow: hidden;
+    display: block;
+}
+.empty-cart .empty-status .empty-header {
+    color: #6d6e71;
+    font-size: 15px;
+}
+.empty-cart .empty-status .continue-shop {
+    background-color: #43b02a;
+    color: #fff;
+    width: 95%;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 10px 0;
+    margin: 10px auto;
+}
+.checkout-alert .error {
+    color: #43b02a;
+    border: 1px solid #43b02a;
+    background-color: #fff6f7!important;
+}
+.checkout-alert .checkout-msg {
+    position: fixed;
+    font-size: 14px;
+    padding: 8px 0;
+    text-align: center;
+    margin: 0 7px;
+    width: 96%;
+    transform: translateY(-50px);
+    transition: all 450ms ease-in;
+    z-index: 200;
+    display: none;
+}
+.toast {
+    padding: 4px 10px;
+    background: rgba(0, 0, 0, .65);
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    transition: all 350ms ease-out;
+    z-index: 175;
+}
+.notify-alert {
+    background-color: #417505;
+    color: #fff;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 0;
+    display: none;
+    font-family: lato;
+    z-index: 360;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.add_message {
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 15px;
+    background: #de6a0b;
+    z-index: 360;
+    width: 100%;
+    left: 0;
+    display: none;
+    height: 45px;
+    bottom: 59px;
+}
+.add_message img {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 15px;
+    width: 19px;
+}
+.add_message span {
+    float: right;
+    color: #8d8d8d;
+    border: 1px solid #8d8d8d;
+    border-radius: 50%;
+    background: #fff;
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+    text-align: center;
+    line-height: .9;
+    font-weight: 700;
+    display: none;
+}
+.oos-alert {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    z-index: 175;
+    display: none;
+}
+.oos-alert .alert-box {
+    padding: 15px;
+    background: #fff;
+    position: absolute;
+    top: 110px;
+    width: 85%;
+    text-align: center;
+    left: 7%;
+    border-radius: 3px;
+}
+@media (max-width: 320px) and (min-width: 300px)
+{
+    .oos-alert .alert-box {
+        font-size: 15px;
+    }
+    
+}
+.oos-alert .alert-box .header {
+    color: #e32038;
+}
+.oos-alert .alert-box .header img {
+    width: 25px;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 10px;
+}
+.oos-alert .alert-box .content {
+    padding: 15px;
+    color: #727077;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.oos-alert .alert-box .ctas {
+    margin-top: 15px;
+}
+.oos-alert .alert-box .ctas button {
+    display: none;
+    vertical-align: middle;
+    min-width: 119px;
+    padding: 6px 8px;
+    margin: 0;
+    font-weight: 600;
+}
+.oos-alert .alert-box .ctas button.btn-dark {
+    max-width: 119px;
+    border: 1px solid #e20f2b;
+    background-color: #e20f2b;
+    color: #fff;
+}
+.oos-alert .alert-box .ctas button.btn-cont {
+    max-width: 143px;
+}
+
+.oos-alert .alert-box .ctas button {
+    display: none;
+    vertical-align: middle;
+    min-width: 119px;
+    padding: 6px 8px;
+    margin: 0;
+    font-weight: 600;
+}
+.checkout-oos-alert {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    z-index: 175;
+    display: none;
+}
+.checkout-oos-alert .alert-box {
+    padding: 10px 10px;
+    background: #fff;
+    position: absolute;
+    top: 110px;
+    width: 85%;
+    text-align: left;
+    left: 7%;
+    border-radius: 10px;
+}
+.checkout-oos-alert .alert-box .header {
+    color: #d47015;
+    font-size: 17px;
+    font-weight: 700;
+}
+.checkout-oos-alert .alert-box .content {
+    color: #727077;
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 0;
+}
+.ll-coupon-failure-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 150;
+    display: none;
+}
+.page-header {
+    background-color: #4a4a4a;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.page-header .back-button {
+    float: left;
+    position: absolute;
+    width: 40px;
+    top: 10px;
+    left: 0;
+}
+.page-header .back-button img {
+    width: 7px;
+}
+.style-bold {
+    font-weight: 600;
+}
+
+.payments-wrapper .order-processing-wrapper .order-processing {
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 4px rgba(0, 0, 0, .2)
+}
+.payments-wrapper {
+	width: 100%;
+	position: relative;
+	margin-top: 55px
+}
+.loyalty_payment_wrapper .free_del_msg,
+.payments-wrapper .free_del_msg {
+	display: none;
+	text-align: center;
+	border: 1px solid #d47015;
+	width: 96%;
+	margin-left: 2%;
+	color: #d47015;
+	background: #fffdf9;
+	padding: 4px 0;
+	font-size: 14px
+}
+.loyalty_payment_wrapper .free_del_msg.show,
+.payments-wrapper .free_del_msg.show {
+	display: block
+}
+.loyalty_payment_wrapper .deliver-option,
+.payments-wrapper .deliver-option {
+	margin: 10px 7px;
+	clear: both;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3)
+}
+.loyalty_payment_wrapper .deliver-option .del-details,
+.payments-wrapper .deliver-option .del-details {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 5px
+}
+.loyalty_payment_wrapper .deliver-option .del-details .deliver-header,
+.payments-wrapper .deliver-option .del-details .deliver-header {
+	float: left;
+	font-size: 13px;
+	color: #cbcbcb
+}
+.loyalty_payment_wrapper .deliver-option .del-details .edit-slot,
+.payments-wrapper .deliver-option .del-details .edit-slot {
+	float: right;
+	font-size: 12px;
+	color: #43b02a
+}
+.loyalty_payment_wrapper .deliver-option .delivery-message,
+.payments-wrapper .deliver-option .delivery-message {
+	font-size: 13px;
+	color: #6d6e71
+}
+.loyalty_payment_wrapper .contactless-deliver-option,
+.payments-wrapper .contactless-deliver-option {
+	margin: -9px 7px 2px 7px;
+	clear: both;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3)
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-del-details,
+.payments-wrapper .contactless-deliver-option .contactless-del-details {
+	width: 100%;
+	overflow: hidden
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-del-details .check-container,
+.payments-wrapper .contactless-deliver-option .contactless-del-details .check-container {
+	position: absolute;
+	color: #6d6e71;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-del-details .check-container input[type=checkbox],
+.payments-wrapper .contactless-deliver-option .contactless-del-details .check-container input[type=checkbox] {
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	width: 18px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 18px;
+	cursor: pointer
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-del-details .checkmark,
+.payments-wrapper .contactless-deliver-option .contactless-del-details .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-del-details .checkmark:after,
+.payments-wrapper .contactless-deliver-option .contactless-del-details .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-del-details .check-container input:checked~.checkmark:after,
+.payments-wrapper .contactless-deliver-option .contactless-del-details .check-container input:checked~.checkmark:after {
+	display: block
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-del-details .check-container .checkmark:after,
+.payments-wrapper .contactless-deliver-option .contactless-del-details .check-container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #43b02a;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-del-details .contactless-deliver-header,
+.payments-wrapper .contactless-deliver-option .contactless-del-details .contactless-deliver-header {
+	margin-left: 7%;
+	font-family: Lato;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 15px;
+	text-align: left;
+	color: #6d6e71;
+	position: relative;
+	top: 1px
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-del-details .contactless-view,
+.payments-wrapper .contactless-deliver-option .contactless-del-details .contactless-view {
+	float: right;
+	font-size: 12px;
+	color: #43b02a;
+	position: relative;
+	top: -13px
+}
+.loyalty_payment_wrapper .contactless-deliver-option .contactless-delivery-message,
+.payments-wrapper .contactless-deliver-option .contactless-delivery-message {
+	margin-left: 7%;
+	font-family: Lato;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: left;
+	color: #6d6e71;
+	margin-top: -10px
+}
+.loyalty_payment_wrapper .dashed_container,
+.payments-wrapper .dashed_container {
+	border: dashed 2px #417505;
+	background-color: #f9fffa;
+	border-radius: 5px;
+	margin: 7px 8px
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent,
+.payments-wrapper .dashed_container .coupon_parent {
+	display: flex;
+	flex-direction: column
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .coupon_header,
+.payments-wrapper .dashed_container .coupon_parent .coupon_header {
+	margin-top: 10px;
+	font-family: Lato;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: left;
+	margin-bottom: 5px;
+	margin-left: 15px
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .coupon_data_container,
+.payments-wrapper .dashed_container .coupon_parent .coupon_data_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	margin-left: 15px
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .coupon_data_container .cpn_code,
+.payments-wrapper .dashed_container .coupon_parent .coupon_data_container .cpn_code {
+	width: 70%;
+	font-family: Lato;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: left;
+	color: #708090;
+	border-bottom: thin solid #f8f8f8;
+	text-transform: uppercase
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .coupon_data_container .remove_referral_btn,
+.payments-wrapper .dashed_container .coupon_parent .coupon_data_container .remove_referral_btn {
+	text-align: center;
+	border: 1px solid #708090;
+	border-radius: 5px;
+	background-color: #f9fffa;
+	margin-right: 10px
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .coupon_data_container .remove_referral_btn span,
+.payments-wrapper .dashed_container .coupon_parent .coupon_data_container .remove_referral_btn span {
+	padding: 10px;
+	font-family: Lato;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: right;
+	color: #708090
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .cpn_sucess,
+.payments-wrapper .dashed_container .coupon_parent .cpn_sucess {
+	margin-bottom: 5px
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .cpn_sucess .round-tick-success,
+.payments-wrapper .dashed_container .coupon_parent .cpn_sucess .round-tick-success {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	background-color: green;
+	vertical-align: middle;
+	margin-right: 7px;
+	margin-left: 15px;
+	border-radius: 10px
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .cpn_sucess .round-tick-success:after,
+.payments-wrapper .dashed_container .coupon_parent .cpn_sucess .round-tick-success:after {
+	content: '';
+	display: block;
+	top: 3px;
+	left: 6px;
+	position: absolute;
+	width: 4px;
+	height: 8px;
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .cpn_sucess .cpn_success_msg,
+.payments-wrapper .dashed_container .coupon_parent .cpn_sucess .cpn_success_msg {
+	font-family: Lato;
+	font-size: 3.3vw;
+	line-height: 16px;
+	text-align: left;
+	color: #417505
+}
+.loyalty_payment_wrapper .dashed_container .coupon_parent .cpn_sucess .complimentery-msg,
+.payments-wrapper .dashed_container .coupon_parent .cpn_sucess .complimentery-msg {
+	background-color: green;
+	color: #fff;
+	padding: 2px 4px;
+	margin: 2px 12px;
+	margin-left: 40px;
+	font-size: 12px
+}
+.loyalty_payment_wrapper .coupon-wrapper,
+.payments-wrapper .coupon-wrapper {
+	padding: 8px 15px;
+	margin: 8px;
+	font-size: 14px;
+	background-color: #fff;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .3);
+	border-radius: 5px
+}
+.loyalty_payment_wrapper .coupon-wrapper .coupon-contain,
+.payments-wrapper .coupon-wrapper .coupon-contain {
+	transform: rotate(0)
+}
+.loyalty_payment_wrapper .coupon-wrapper .coupon-contain .apply-coupon,
+.payments-wrapper .coupon-wrapper .coupon-contain .apply-coupon {
+	display: inline-block
+}
+.loyalty_payment_wrapper .coupon-wrapper .coupon-contain .change-arrow,
+.payments-wrapper .coupon-wrapper .coupon-contain .change-arrow {
+	transform: rotate(180deg)
+}
+.loyalty_payment_wrapper .coupon-wrapper .coupon-contain .cpn-success,
+.payments-wrapper .coupon-wrapper .coupon-contain .cpn-success {
+	display: none
+}
+.loyalty_payment_wrapper .coupon-wrapper .coupon-contain .cpn-success .round-tick,
+.payments-wrapper .coupon-wrapper .coupon-contain .cpn-success .round-tick {
+	display: inline-block;
+	position: relative;
+	border: 2px solid #cbcbcb;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	vertical-align: middle;
+	margin-right: 10px
+}
+.loyalty_payment_wrapper .coupon-wrapper .coupon-contain .cpn-success .round-tick .ticked,
+.payments-wrapper .coupon-wrapper .coupon-contain .cpn-success .round-tick .ticked {
+	content: "\2713";
+	background-color: #417505;
+	width: 20px;
+	position: absolute;
+	height: 20px;
+	top: -2px;
+	left: -2px;
+	border-radius: 10px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center
+}
+.loyalty_payment_wrapper .coupon-wrapper .coupon-contain .cpn-success.show,
+.payments-wrapper .coupon-wrapper .coupon-contain .cpn-success.show {
+	display: inline-block
+}
+.loyalty_payment_wrapper .coupon-wrapper .coupon-contain .coupon-arrow,
+.payments-wrapper .coupon-wrapper .coupon-contain .coupon-arrow {
+	float: right;
+	width: 10px
+}
+.loyalty_payment_wrapper .coupon-wrapper .coupon-contain .coupon-arrow img,
+.payments-wrapper .coupon-wrapper .coupon-contain .coupon-arrow img {
+	width: 100%
+}
+.loyalty_payment_wrapper .coupon-wrapper .cpn_code,
+.payments-wrapper .coupon-wrapper .cpn_code {
+	position: relative;
+	display: none
+}
+.loyalty_payment_wrapper .coupon-wrapper .cpn_code .coupon-text,
+.payments-wrapper .coupon-wrapper .cpn_code .coupon-text {
+	width: 69%;
+	margin-top: 13px!important;
+	border-bottom: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .coupon-wrapper .cpn_code .cpn-btn,
+.payments-wrapper .coupon-wrapper .cpn_code .cpn-btn {
+	vertical-align: bottom;
+	font-size: 12px;
+	color: #43b02a;
+	float: right;
+	margin-top: 15px!important;
+	background-color: #fff;
+	border: none;
+	font-weight: 600
+}
+.loyalty_payment_wrapper .coupon-wrapper .cpn_code .apply_btn,
+.payments-wrapper .coupon-wrapper .cpn_code .apply_btn {
+	text-align: center;
+	border: 1px solid #d0021b;
+	border-radius: 5px;
+	background-color: #fff;
+	margin-right: 10px;
+	margin-top: 12px!important;
+	padding: 3px 0
+}
+.loyalty_payment_wrapper .coupon-wrapper .cpn_code .apply_btn span,
+.payments-wrapper .coupon-wrapper .cpn_code .apply_btn span {
+	font-family: Lato;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 12px;
+	text-align: center;
+	color: #d0021b;
+	padding: 0 20px
+}
+.loyalty_payment_wrapper .coupon-wrapper .cpn_code .remove_btn,
+.payments-wrapper .coupon-wrapper .cpn_code .remove_btn {
+	text-align: center;
+	border: 1px solid #708090;
+	border-radius: 5px;
+	background-color: #fff;
+	margin-right: 10px;
+	display: none
+}
+.loyalty_payment_wrapper .coupon-wrapper .cpn_code .remove_btn span,
+.payments-wrapper .coupon-wrapper .cpn_code .remove_btn span {
+	padding: 10px;
+	font-family: Lato;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: right;
+	color: #708090
+}
+.loyalty_payment_wrapper .coupon-wrapper .cpn_code.show,
+.payments-wrapper .coupon-wrapper .cpn_code.show {
+	display: block!important
+}
+.loyalty_payment_wrapper .payment-option-wrapper,
+.payments-wrapper .payment-option-wrapper {
+	font-size: 14px;
+	margin-top: 10px;
+	background-color: #fff;
+	overflow: hidden;
+	padding: 10px 0
+}
+.loyalty_payment_wrapper .payment-option-wrapper .auto_renew_toast,
+.payments-wrapper .payment-option-wrapper .auto_renew_toast {
+	margin: 8px 17px;
+	text-align: left;
+	font-size: 12px;
+	font-family: Lato;
+	letter-spacing: 0;
+	color: orange;
+	opacity: 1
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-header,
+.payments-wrapper .payment-option-wrapper .payment-header {
+	margin-left: 17px;
+	font-size: 18px;
+	color: #000;
+	font-weight: 700
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types,
+.payments-wrapper .payment-option-wrapper .payment-types {
+	margin-bottom: 20px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .grayed,
+.payments-wrapper .payment-option-wrapper .payment-types .grayed {
+	background-color: #f1f1f1!important
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types li,
+.payments-wrapper .payment-option-wrapper .payment-types li {
+	width: 100%;
+	border-bottom: 1px solid #f3f5f9;
+	overflow: hidden;
+	color: #6d6e71;
+	font-size: 13px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types li:last-of-type,
+.payments-wrapper .payment-option-wrapper .payment-types li:last-of-type {
+	border-bottom: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet {
+	color: #6d6e71;
+	padding: 10px 17px;
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap {
+	clear: both
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money {
+	float: left
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .check-container,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .check-container {
+	position: absolute;
+	color: #6d6e71;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .check-container input[type=checkbox],
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .check-container input[type=checkbox] {
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	width: 18px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 18px;
+	cursor: pointer
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .checkmark,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .check-container input:checked~.checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .check-container input:checked~.checkmark:after {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .check-container .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money .check-container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #43b02a;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money span,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .wallet-money span {
+	display: inline-block;
+	font-size: 14px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .usable-cash,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .wallet-wrap .usable-cash {
+	float: right;
+	margin-right: 5px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash {
+	width: 100%;
+	overflow: hidden;
+	padding-top: 10px;
+	position: relative
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .bonus-cash,
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .cash-only,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .bonus-cash,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .cash-only {
+	display: inline-block;
+	color: #6d6e71
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .bonus-cash::after,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .bonus-cash::after {
+	content: '';
+	display: inline-block;
+	height: 15px;
+	border-right: 1px solid #6d6e71;
+	margin: 0 10px;
+	position: relative;
+	top: 1px;
+	height: 15px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .lic-inline-loader,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .lic-inline-loader {
+	width: 120px;
+	vertical-align: top;
+	position: absolute;
+	top: -12px;
+	left: 50%;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .lic-inline-loader img,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .lic-inline-loader img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .lic-refresh-loader,
+.payments-wrapper .payment-option-wrapper .payment-types .licious-wallet .devide-cash .lic-refresh-loader {
+	display: none;
+	position: absolute;
+	top: 2px;
+	left: 60%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments {
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments.show,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments.show {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .saved-card-text,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .saved-card-text {
+	font-size: 11px;
+	color: #cbcbcb;
+	padding: 10px 17px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options {
+	overflow: hidden;
+	padding: 10px 17px;
+	position: relative
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options:last-of-type:after,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options:last-of-type:after {
+	border-bottom: 0;
+	margin: 0
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options:after,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options:after {
+	content: '';
+	display: block;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+	border-bottom: 1px solid #f2f2f2
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .cvv-field,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .cvv-field {
+	margin-top: 10px;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-type,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-type {
+	float: left
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-type .pay-img,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-type .pay-img {
+	width: 36px;
+	display: inline-block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-type .pay-img img,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-type .pay-img img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-type .pay-id,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-type .pay-id {
+	margin-left: 20px;
+	display: inline-block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money {
+	float: right
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .money,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .money {
+	float: left;
+	margin-right: 20px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select {
+	float: right;
+	margin-right: 10px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container {
+	position: absolute;
+	color: #6d6e71;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container input[type=checkbox],
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container input[type=checkbox] {
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	width: 18px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 18px;
+	cursor: pointer
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .checkmark,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container input:checked~.checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container input:checked~.checkmark:after {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #43b02a;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money .select .check-container {
+	padding-left: 20px!important
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money::after,
+.payments-wrapper .payment-option-wrapper .payment-types .saved-payments .options .payment-money::after {
+	content: "";
+	display: block;
+	clear: both
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .add-payment-text,
+.payments-wrapper .payment-option-wrapper .payment-types .add-payment-text {
+	width: 100%;
+	font-size: 12px;
+	color: #cbcbcb;
+	padding: 10px 10px 10px 17px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method {
+	position: relative;
+	width: 100%;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method.show,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method.show {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details {
+	overflow: hidden;
+	padding: 10px 17px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .method-type,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .method-type {
+	float: left
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .method-type .pay-img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .method-type .pay-img {
+	width: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .method-type .pay-img img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .method-type .pay-img img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .method-type .pay-name,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .method-type .pay-name {
+	display: inline-block;
+	margin-left: 20px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .pay-description,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .pay-description {
+	float: right
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .pay-description .pay-arrow,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .pay-description .pay-arrow {
+	width: 23px;
+	display: block;
+	vertical-align: middle;
+	padding: 0 6px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .pay-description .pay-arrow img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .pay-description .pay-arrow img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .pay-description .pay-arrow img.rotate,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details .pay-description .pay-arrow img.rotate {
+	transform: rotate(180deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi {
+	overflow: hidden;
+	padding: 10px 17px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay {
+	position: relative
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay p,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay p {
+	color: #000;
+	font-size: 13px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container {
+	position: relative;
+	width: 100%;
+	padding: 2px;
+	white-space: nowrap;
+	overflow: auto
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card {
+	position: relative;
+	width: 60%;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 5px;
+	padding: 7px 10px;
+	height: 60px;
+	text-align: left;
+	background: 0 0;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card.selected,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card.selected {
+	border: 1px solid #43b02a!important
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image {
+	width: 100%;
+	height: 25px;
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image.center-fit,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image.center-fit {
+	margin: 10px auto;
+	text-align: center
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image img {
+	width: 50px;
+	height: 100%;
+	object-fit: contain;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image img.disable-img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image img.disable-img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image span,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-image span {
+	font-size: 16px;
+	color: #6d6e71;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .other-upi-image,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .other-upi-image {
+	width: 30px;
+	margin-top: 5px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .other-upi-image img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .other-upi-image img {
+	width: 100%;
+	object-fit: cover;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .other-upi-image span,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .other-upi-image span {
+	font-size: 16px;
+	color: #6d6e71;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-offer,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .upi-offer {
+	color: #417505;
+	font-size: 11px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .dis-msg,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .dis-msg {
+	color: #d47015;
+	font-size: 11px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .button-check,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .button-check {
+	top: 10px;
+	right: 30px;
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .button-check.show,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .button-check.show {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .button-check:before,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .button-check:before {
+	content: " ";
+	display: block;
+	border: solid 8px #43b02a;
+	border-radius: 8px;
+	height: 0;
+	width: 0;
+	position: absolute;
+	left: .6em;
+	top: 40%;
+	margin-top: -3px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .button-check:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card .button-check:after {
+	content: " ";
+	display: block;
+	width: 5px;
+	height: 10px;
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	position: absolute;
+	left: 13px;
+	top: 40%;
+	margin-top: -2px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card:last-of-type,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .upi-container .upi-card:last-of-type {
+	margin-right: 0
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .vpa-section,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .vpa-section {
+	position: relative;
+	width: 100%;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .vpa-section.show,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .vpa-section.show {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .vpa-section p,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .vpa-section p {
+	color: #000;
+	font-size: 13px;
+	margin: 10px 0
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .vpa-section .user-vpa,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-details-upi.upi-pay .vpa-section .user-vpa {
+	margin: 0!important;
+	border: 1px solid #cbcbcb!important;
+	border-radius: 3px!important;
+	padding: 10px 10px!important;
+	font-size: 12px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section {
+	overflow: hidden;
+	padding: 5px 0;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.show,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.show {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paytm,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paytm {
+	padding: 0 17px 10px 17px;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paytm.show,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paytm.show {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc {
+	padding: 10px 17px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .card-expiry-month,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .card-expiry-month {
+	width: 16%;
+	display: inline-block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .card-expiry-year,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .card-expiry-year {
+	width: 16%;
+	display: inline-block;
+	margin-left: 5px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .cvv-number-card,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .cvv-number-card {
+	width: 43%;
+	float: right
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card {
+	width: 100%;
+	overflow: hidden;
+	padding: 15px 0
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .check-container,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .check-container {
+	position: absolute;
+	color: #6d6e71;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .check-container input[type=checkbox],
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .check-container input[type=checkbox] {
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	width: 18px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 18px;
+	cursor: pointer
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+    border: solid 1px rgba(0,0,0,.1);
+    border-radius: 2px;
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .checkmark,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #cbcbcb;
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .check-container input:checked~.checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .check-container input:checked~.checkmark:after {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .check-container .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .select-save-card .check-container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #43b02a;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .card-save,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .card-save {
+	text-align: center
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .card-save button,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.ccdc .card-save button {
+	padding: 15px 0;
+	background-color: #fff;
+	border: 1px solid #43b02a;
+	border-radius: 3px;
+	color: #43b02a;
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .nb-text,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .nb-text {
+	color: #cbcbcb;
+	font-size: 12px;
+	padding: 5px 20px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li {
+	padding: 5px 17px;
+	display: inline-block;
+	border-bottom: 1px solid #f3f5f9
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li:last-of-type,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li:last-of-type {
+	border-bottom: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .left,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .left {
+	float: left
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .left .bank-icon,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .left .bank-icon {
+	width: 20px;
+	display: inline-block;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .left .bank-icon img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .left .bank-icon img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .left .bank-name,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .left .bank-name {
+	margin-left: 15px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right {
+	width: 8%;
+	float: right
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .check-container,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .check-container {
+	position: absolute;
+	color: #6d6e71;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .check-container input[type=checkbox],
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .check-container input[type=checkbox] {
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	width: 18px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 18px;
+	cursor: pointer
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .checkmark,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .check-container input:checked~.checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .check-container input:checked~.checkmark:after {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .check-container .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .popular-bank li .right .check-container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #43b02a;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .other-bank,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .other-bank {
+	color: #cbcbcb;
+	font-size: 13px;
+	padding: 5px 25px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank {
+	padding: 5px 25px;
+	padding-bottom: 25px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank .choose-bank,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank .choose-bank {
+	border: 1px solid #cbcbcb;
+	color: #6d6e71
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank .img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank .img {
+	margin-left: 10px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank button,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank button {
+	padding: 15px 0;
+	background-color: #fff;
+	border: 1px solid #43b02a;
+	border-radius: 3px;
+	color: #43b02a;
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .down-info,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .down-info {
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .down-info .bank-list,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .down-info .bank-list {
+	margin: 0 3px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+	border-radius: 3px;
+	bottom: 0;
+	position: fixed;
+	background-color: #fff;
+	display: block;
+	z-index: 100;
+	height: 250px;
+	overflow-y: scroll
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .down-info .bank-list ul li,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .down-info .bank-list ul li {
+	width: 100%;
+	border-bottom: 1px solid #f3f5f9;
+	overflow: hidden;
+	color: #6d6e71;
+	font-size: 13px;
+	padding: 8px 5px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank {
+	padding: 10px 0
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank CheckboxGroup1,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank CheckboxGroup1 {
+	width: 20px;
+	height: 20px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li {
+	padding: 5px 17px;
+	display: inline-block;
+	border-bottom: 1px solid #f3f5f9
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li:last-of-type,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li:last-of-type {
+	border-bottom: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .left,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .left {
+	float: left
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .left .bank-icon,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .left .bank-icon {
+	width: 50px;
+	display: inline-block;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .left .bank-icon img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .left .bank-icon img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .left .bank-name,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .left .bank-name {
+	margin-left: 20px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right {
+	width: 8%;
+	float: right
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .check-container,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .check-container {
+	position: absolute;
+	color: #6d6e71;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .check-container input[type=checkbox],
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .check-container input[type=checkbox] {
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	width: 18px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 18px;
+	cursor: pointer
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .checkmark,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .check-container input:checked~.checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .check-container input:checked~.checkmark:after {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .check-container .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.otherwallet .popular-bank li .right .check-container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #43b02a;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .pay-later,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .pay-later {
+	width: 165px;
+	display: block;
+	margin: auto
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .pay-later img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .pay-later img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check {
+	text-align: center;
+	width: 75%;
+	margin: 0 auto
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .check-container,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .check-container {
+	position: absolute;
+	color: #6d6e71;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .check-container input[type=checkbox],
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .check-container input[type=checkbox] {
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	width: 18px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 18px;
+	cursor: pointer
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .checkmark,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .check-container input:checked~.checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .check-container input:checked~.checkmark:after {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .check-container .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.paylater .paylater-check .check-container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #43b02a;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod {
+	width: 165px;
+	display: block;
+	margin: auto
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod img,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check {
+	text-align: center
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .check-container,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .check-container {
+	position: absolute;
+	color: #6d6e71;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .check-container input[type=checkbox],
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .check-container input[type=checkbox] {
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	width: 18px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 18px;
+	cursor: pointer
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .checkmark,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .check-container input:checked~.checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .check-container input:checked~.checkmark:after {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .check-container .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.cash .cod-check .check-container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #43b02a;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details {
+	overflow: hidden;
+	padding: 10px 17px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .method-type,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .method-type {
+	float: left
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-img,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-img {
+	width: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0;
+	margin-right: 20px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-img img,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-img img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-name,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-name {
+	display: inline-block;
+	font-size: 12px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-before,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-before {
+	display: none;
+	color: #d47015;
+	font-size: 9px;
+	margin-right: 5px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-after,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .method-type .pay-after {
+	display: none;
+	color: #d47015;
+	font-size: 9px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description {
+	float: right
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified {
+	display: none;
+	overflow: hidden;
+	float: left;
+	margin-right: 20px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .check-container,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .check-container {
+	position: absolute;
+	color: #6d6e71;
+	cursor: pointer;
+	font-size: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .check-container input[type=checkbox],
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .check-container input[type=checkbox] {
+	position: absolute;
+	opacity: 1;
+	overflow: hidden;
+	width: 18px;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 18px;
+	cursor: pointer
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .checkmark,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	border: 1px solid #cbcbcb
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .check-container input:checked~.checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .check-container input:checked~.checkmark:after {
+	display: block
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .check-container .checkmark:after,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .check-container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid #43b02a;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .paytm-inline-loader,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .paytm-inline-loader {
+	display: none;
+	position: absolute;
+	width: 150px;
+	height: 80px;
+	top: 5px;
+	z-index: 10;
+	right: -95px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .inline-loader,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .inline-loader {
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	top: -15px;
+	z-index: 10;
+	right: -107px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .inline-loader img,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .inline-loader img {
+	width: 130px;
+	height: 70px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .amount,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .paytm-verified .amount {
+	float: left;
+	margin-right: 10px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .check-otp,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-details .paytm-description .check-otp {
+	display: none;
+	color: #43b02a;
+	border: 1px solid #43b02a;
+	padding: 5px 16px;
+	border-radius: 3px;
+	background: 0 0;
+	font-weight: 700;
+	font-size: 13px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-verification,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-verification {
+	display: none;
+	overflow: hidden;
+	width: 96%;
+	margin-left: 2%;
+	text-align: center;
+	margin-bottom: 10px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-verification .get-otp,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-verification .get-otp {
+	display: block;
+	position: relative
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-verification .get-otp .resent-otp,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-verification .get-otp .resent-otp {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	font-weight: 700;
+	color: #43b02a
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .paytm-verification .verify,
+.payments-wrapper .payment-option-wrapper .payment-types .paytm-verification .verify {
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 0;
+	border: 1px solid #43b02a;
+	color: #43b02a;
+	font-weight: 700;
+	font-size: 16px;
+	background: no-repeat;
+	border-radius: 3px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .payment-types .error-amt,
+.payments-wrapper .payment-option-wrapper .payment-types .error-amt {
+	display: none;
+	padding: 0 17px;
+	color: #43b02a;
+	font-size: 11px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details,
+.payments-wrapper .payment-option-wrapper .bill-details {
+	background: #fff 0 0 no-repeat padding-box;
+	border: 1px dashed #979797;
+	opacity: 1;
+	margin: 5px;
+	margin-bottom: 150px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-heading,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-heading {
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 19px;
+	font-size: 15px;
+	font-weight: 700
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-contents ul,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-contents ul {
+	margin-right: 15px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-contents ul li,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-contents ul li {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 17px;
+	margin-bottom: 10px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-contents ul li .seperator,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-contents ul li .seperator {
+	border: 1px solid #e8e8e8;
+	opacity: 1;
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-contents ul li .key,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-contents ul li .key {
+	float: left;
+	font: 12px/15px Lato;
+	letter-spacing: 0;
+	color: #6d6e71;
+	opacity: 1;
+	display: flex;
+	flex-direction: column
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-contents ul li .key .message,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-contents ul li .key .message {
+	color: #d47015
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-contents ul li .value,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-contents ul li .value {
+	font: 12px/15px Lato;
+	letter-spacing: 0;
+	color: #6d6e71;
+	opacity: 1;
+	margin-right: 5px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-contents ul li .key-total,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-contents ul li .key-total {
+	float: left;
+	text-align: left;
+	font: normal normal bold 14px/17px Lato;
+	letter-spacing: 0;
+	color: #000;
+	opacity: 1;
+	display: flex;
+	flex-direction: column
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-contents ul li .key-total .message,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-contents ul li .key-total .message {
+	color: #d47015
+}
+.loyalty_payment_wrapper .payment-option-wrapper .bill-details .bd-contents ul li .value-total,
+.payments-wrapper .payment-option-wrapper .bill-details .bd-contents ul li .value-total {
+	text-align: right;
+	font: normal normal bold 14px/17px Lato;
+	letter-spacing: 0;
+	color: #43b02a;
+	opacity: 1;
+	margin-right: 5px
+}
+.loyalty_payment_wrapper .payment-option-wrapper .place-order,
+.payments-wrapper .payment-option-wrapper .place-order {
+	margin: 7px 8px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+	border-radius: 3px;
+	bottom: 0;
+	z-index: 20;
+	position: fixed;
+	width: 95%;
+	background-color: #fff;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .place-order .total,
+.payments-wrapper .payment-option-wrapper .place-order .total {
+	width: 49%;
+	text-align: center;
+	color: #4a4a4a;
+	font-size: 15px;
+	display: inline-block;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .place-order .total .payment-info,
+.payments-wrapper .payment-option-wrapper .place-order .total .payment-info {
+	width: 14px;
+	display: inline-block;
+	margin-left: 8px;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .place-order .total .payment-info img,
+.payments-wrapper .payment-option-wrapper .place-order .total .payment-info img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-option-wrapper .place-order .order,
+.payments-wrapper .payment-option-wrapper .place-order .order {
+	width: 50%;
+	background-color: #43b02a;
+	color: #fff;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 17px 0;
+	vertical-align: middle;
+	font-size: 9px;
+	text-align: center;
+	border: none
+}
+.loyalty_payment_wrapper .payment-option-wrapper .place-order .order .order-text,
+.payments-wrapper .payment-option-wrapper .place-order .order .order-text {
+	display: inline-block;
+	width: 79%;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .payment-option-wrapper .place-order .order .order-text .placeorder,
+.payments-wrapper .payment-option-wrapper .place-order .order .order-text .placeorder {
+	line-height: 1
+}
+.loyalty_payment_wrapper .payment-option-wrapper .place-order .order .go-next,
+.payments-wrapper .payment-option-wrapper .place-order .order .go-next {
+	display: inline-block;
+	width: 4%;
+	vertical-align: middle;
+	line-height: 0
+}
+.loyalty_payment_wrapper .payment-option-wrapper .place-order .order .go-next img,
+.payments-wrapper .payment-option-wrapper .place-order .order .go-next img {
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-break-down,
+.payments-wrapper .payment-break-down {
+	background: #fff 0 0 no-repeat padding-box;
+	border: 1px dashed #979797;
+	opacity: 1;
+	margin: 5px;
+	margin-bottom: 50px
+}
+.loyalty_payment_wrapper .payment-break-down .header,
+.payments-wrapper .payment-break-down .header {
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 19px;
+	font-size: 15px;
+	font-weight: 700
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges,
+.payments-wrapper .payment-break-down .payment-charges {
+	margin-right: 15px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges li,
+.payments-wrapper .payment-break-down .payment-charges li {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 17px;
+	margin-bottom: 10px
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges li .seperator,
+.payments-wrapper .payment-break-down .payment-charges li .seperator {
+	border: 1px solid #e8e8e8;
+	opacity: 1;
+	width: 100%
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges li .key,
+.payments-wrapper .payment-break-down .payment-charges li .key {
+	float: left;
+	font: 12px/15px Lato;
+	letter-spacing: 0;
+	color: #6d6e71;
+	opacity: 1;
+	display: flex;
+	flex-direction: column
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges li .key .message,
+.payments-wrapper .payment-break-down .payment-charges li .key .message {
+	color: #d47015
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges li .value,
+.payments-wrapper .payment-break-down .payment-charges li .value {
+	font: 12px/15px Lato;
+	letter-spacing: 0;
+	color: #6d6e71;
+	opacity: 1;
+	margin-right: 5px
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges li .key-total,
+.payments-wrapper .payment-break-down .payment-charges li .key-total {
+	float: left;
+	text-align: left;
+	font: normal normal bold 14px/17px Lato;
+	letter-spacing: 0;
+	color: #000;
+	opacity: 1;
+	display: flex;
+	flex-direction: column
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges li .key-total .message,
+.payments-wrapper .payment-break-down .payment-charges li .key-total .message {
+	color: #d47015
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges li .value-total,
+.payments-wrapper .payment-break-down .payment-charges li .value-total {
+	text-align: right;
+	font: normal normal bold 14px/17px Lato;
+	letter-spacing: 0;
+	color: #43b02a;
+	opacity: 1;
+	margin-right: 5px
+}
+.loyalty_payment_wrapper .payment-break-down .payment-charges li .value-total:before,
+.payments-wrapper .payment-break-down .payment-charges li .value-total:before {
+	content: "₹ ";
+	color: #43b02a;
+	font: normal normal bold 14px/17px Lato
+}
+.loyalty_payment_wrapper .order-failed-wrapper,
+.payments-wrapper .order-failed-wrapper {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .59);
+	padding-top: 50px;
+	z-index: 20;
+	text-align: center
+}
+.loyalty_payment_wrapper .order-failed-wrapper.show,
+.payments-wrapper .order-failed-wrapper.show {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed,
+.payments-wrapper .order-failed-wrapper .order-failed {
+	display: block;
+	margin: 5% auto;
+	width: 80%;
+	padding: 10px 0;
+	background: #fff;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+	border-radius: 3px;
+	padding: 2% 5%
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed .failed-image,
+.payments-wrapper .order-failed-wrapper .order-failed .failed-image {
+	width: 100%;
+	text-align: center
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed .failed-image img,
+.payments-wrapper .order-failed-wrapper .order-failed .failed-image img {
+	margin: 10px 0
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed .failed-image .failed-status,
+.payments-wrapper .order-failed-wrapper .order-failed .failed-image .failed-status {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed .failed-image .failed-text,
+.payments-wrapper .order-failed-wrapper .order-failed .failed-image .failed-text {
+	font-size: 14px;
+	color: #6d6e71
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed .place-later,
+.payments-wrapper .order-failed-wrapper .order-failed .place-later {
+	text-align: center;
+	padding: 10px 0;
+	background-color: #f3ecec;
+	line-height: 1;
+	border-radius: 3px;
+	margin-top: 25px
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed .place-later span,
+.payments-wrapper .order-failed-wrapper .order-failed .place-later span {
+	color: #d47015;
+	font-size: 14px;
+	font-weight: 700
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed .pay-on-delivery,
+.payments-wrapper .order-failed-wrapper .order-failed .pay-on-delivery {
+	display: inline-block;
+	background-color: #fff;
+	color: #4a4a4a;
+	border: 1px solid #4a4a4a;
+	width: 47%;
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 2%;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 3px;
+	margin-top: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed .pay-by-cash,
+.payments-wrapper .order-failed-wrapper .order-failed .pay-by-cash {
+	display: inline-block;
+	background-color: #fff;
+	color: #4a4a4a;
+	border: 1px solid #4a4a4a;
+	width: 47%;
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 2%;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 3px;
+	margin-top: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+.loyalty_payment_wrapper .order-failed-wrapper .order-failed .try-again,
+.payments-wrapper .order-failed-wrapper .order-failed .try-again {
+	display: inline-block;
+	background-color: #43b02a;
+	color: #fff;
+	border: none;
+	width: 47%;
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 2%;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 3px;
+	margin-top: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+.loyalty_payment_wrapper .order-processing-wrapper,
+.payments-wrapper .order-processing-wrapper {
+	display: none;
+	position: absolute;
+	top: 215px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: inherit;
+	padding-top: 50px;
+	z-index: 20
+}
+.loyalty_payment_wrapper .order-processing-wrapper.show,
+.payments-wrapper .order-processing-wrapper.show {
+	display: block
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing,
+.payments-wrapper .order-processing-wrapper .order-processing {
+	display: block;
+	margin: 5px;
+	background: #fff;
+	border-radius: 3px
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .processing-image,
+.payments-wrapper .order-processing-wrapper .order-processing .processing-image {
+	width: 100%;
+	text-align: center
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .processing-image img,
+.payments-wrapper .order-processing-wrapper .order-processing .processing-image img {
+	margin: 10px 0
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .processing-image .processing-status,
+.payments-wrapper .order-processing-wrapper .order-processing .processing-image .processing-status {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .processing-image .processing-text,
+.payments-wrapper .order-processing-wrapper .order-processing .processing-image .processing-text {
+	font-size: 15px;
+	color: #6d6e71
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .track-bar,
+.payments-wrapper .order-processing-wrapper .order-processing .track-bar {
+	position: relative;
+	overflow: hidden;
+	padding: 20px 20px;
+	text-align: center
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .track-bar .checked,
+.payments-wrapper .order-processing-wrapper .order-processing .track-bar .checked {
+	border: 2px solid #417505!important
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .track-bar .checked:after,
+.payments-wrapper .order-processing-wrapper .order-processing .track-bar .checked:after {
+	border-bottom: 2px dashed #417505!important
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .track-bar .circle,
+.payments-wrapper .order-processing-wrapper .order-processing .track-bar .circle {
+	display: inline-block;
+	position: relative;
+	border: 2px solid #cbcbcb;
+	width: 20px;
+	height: 20px;
+	margin-right: 55px;
+	border-radius: 10px
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .track-bar .circle .ticked,
+.payments-wrapper .order-processing-wrapper .order-processing .track-bar .circle .ticked {
+	content: "\2713";
+	background-color: #417505;
+	width: 20px;
+	position: absolute;
+	height: 20px;
+	top: -2px;
+	left: -2px;
+	border-radius: 10px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .track-bar .circle span,
+.payments-wrapper .order-processing-wrapper .order-processing .track-bar .circle span {
+	position: absolute;
+	font-size: 9px;
+	font-weight: 700;
+	width: 100px;
+	top: 20px;
+	left: -30px
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .track-bar .circle:after,
+.payments-wrapper .order-processing-wrapper .order-processing .track-bar .circle:after {
+	content: '';
+	width: 50px;
+	margin-top: 8px;
+	position: absolute;
+	right: 20px;
+	display: block;
+	border-bottom: 2px dashed #cbcbcb
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .track-bar .circle:first-of-type:after,
+.payments-wrapper .order-processing-wrapper .order-processing .track-bar .circle:first-of-type:after {
+	content: '';
+	width: 0
+}
+.loyalty_payment_wrapper .order-processing-wrapper .order-processing .track-bar .circle:last-of-type,
+.payments-wrapper .order-processing-wrapper .order-processing .track-bar .circle:last-of-type {
+	margin-right: 0
+}
+.loyalty_payment_wrapper .upi-processing-wrapper,
+.payments-wrapper .upi-processing-wrapper {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: inherit;
+	z-index: 110
+}
+.loyalty_payment_wrapper .upi-processing-wrapper.show,
+.payments-wrapper .upi-processing-wrapper.show {
+	display: block
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap {
+	position: relative;
+	text-align: center;
+	margin-top: 50px
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap .upi-type,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap .upi-type {
+	margin: 0 auto;
+	padding-top: 20px
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap .upi-type .upi-type-image,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap .upi-type .upi-type-image {
+	width: 55px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap .upi-type .upi-type-image img,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap .upi-type .upi-type-image img {
+	width: 100%;
+	object-fit: cover
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap .upi-type .upi-name,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap .upi-type .upi-name {
+	font-size: 16px;
+	color: #6d6e71;
+	margin-left: 5px;
+	vertical-align: middle;
+	display: inline-block
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap .upi-bank,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap .upi-bank {
+	margin: 0 auto;
+	padding-top: 20px;
+	font-size: 16px;
+	font-weight: 700
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap .upi-desc,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap .upi-desc {
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 13px;
+	color: #6d6e71
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap .timer-wrap,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap .timer-wrap {
+	position: relative
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap .timer-wrap .upi-timer,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap .timer-wrap .upi-timer {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	font-size: 25px;
+	font-weight: 700
+}
+.loyalty_payment_wrapper .upi-processing-wrapper .upi-header-wrap .upi-notification,
+.payments-wrapper .upi-processing-wrapper .upi-header-wrap .upi-notification {
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 13px;
+	color: #d47015
+}
+.loyalty_payment_wrapper .paytm-addmoney,
+.payments-wrapper .paytm-addmoney {
+	z-index: 100;
+	background-color: #fbfbfb;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	display: none
+}
+.loyalty_payment_wrapper .paytm-addmoney .wrapper,
+.payments-wrapper .paytm-addmoney .wrapper {
+	padding-top: 15px
+}
+.loyalty_payment_wrapper .paytm-addmoney .wrapper .icon-wrap img,
+.payments-wrapper .paytm-addmoney .wrapper .icon-wrap img {
+	width: 55px
+}
+.loyalty_payment_wrapper .paytm-addmoney .wrapper .cross-wrap,
+.payments-wrapper .paytm-addmoney .wrapper .cross-wrap {
+	float: right
+}
+.loyalty_payment_wrapper .paytm-addmoney .wrapper .cross-wrap img,
+.payments-wrapper .paytm-addmoney .wrapper .cross-wrap img {
+	width: 16px
+}
+.loyalty_payment_wrapper .paytm-addmoney .amt,
+.payments-wrapper .paytm-addmoney .amt {
+	color: #000;
+	font-weight: 600;
+	font-size: 15px
+}
+.loyalty_payment_wrapper .paytm-addmoney .amt.load-amt,
+.payments-wrapper .paytm-addmoney .amt.load-amt {
+	border: 1px solid #d47015;
+	border-radius: 3px;
+	padding: 5px 0;
+	width: 96%;
+	margin: 0 auto
+}
+.loyalty_payment_wrapper .paytm-addmoney .amt span,
+.payments-wrapper .paytm-addmoney .amt span {
+	color: #000;
+	font-weight: 600;
+	font-size: 15px
+}
+.loyalty_payment_wrapper .paytm-addmoney .fields-wrapper,
+.payments-wrapper .paytm-addmoney .fields-wrapper {
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 3px
+}
+.loyalty_payment_wrapper .paytm-addmoney .fields-wrapper .field,
+.payments-wrapper .paytm-addmoney .fields-wrapper .field {
+	padding: 0 10px
+}
+.loyalty_payment_wrapper .paytm-addmoney .fields-wrapper .field .select-money,
+.payments-wrapper .paytm-addmoney .fields-wrapper .field .select-money {
+	margin: 25px 0
+}
+.loyalty_payment_wrapper .paytm-addmoney .fields-wrapper .field .select-money .price,
+.payments-wrapper .paytm-addmoney .fields-wrapper .field .select-money .price {
+	color: #43b02a;
+	border: 1px dashed;
+	padding: 8px 20px;
+	border-radius: 3px;
+	margin-left: 14px
+}
+.loyalty_payment_wrapper .paytm-addmoney .fields-wrapper .field .select-money .price:first-of-type,
+.payments-wrapper .paytm-addmoney .fields-wrapper .field .select-money .price:first-of-type {
+	margin-left: 0
+}
+.loyalty_payment_wrapper .paytm-addmoney .fields-wrapper .Add-btn,
+.payments-wrapper .paytm-addmoney .fields-wrapper .Add-btn {
+	background-color: #43b02a;
+	border: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: 17px;
+	width: 100%;
+	padding: 10px 0;
+	border-radius: 5px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper,
+.payments-wrapper .paytm-addmoney-wrapper {
+	display: none!important
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper.show,
+.payments-wrapper .paytm-addmoney-wrapper.show {
+	display: block!important
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney {
+	z-index: 100;
+	background-color: #fbfbfb;
+	text-align: center;
+	width: 100%;
+	display: block;
+	bottom: 0;
+	left: 0;
+	position: absolute
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .wrapper,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .wrapper {
+	padding-top: 15px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .wrapper .icon-wrap img,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .wrapper .icon-wrap img {
+	width: 55px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .wrapper .cross-wrap,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .wrapper .cross-wrap {
+	float: right;
+	margin-right: 20px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .wrapper .cross-wrap img,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .wrapper .cross-wrap img {
+	width: 16px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .amt,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .amt {
+	color: #000;
+	font-weight: 600;
+	font-size: 15px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .amt.load-amt,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .amt.load-amt {
+	border: 1px solid #d47015;
+	border-radius: 3px;
+	padding: 5px 0;
+	width: 96%;
+	margin: 0 auto
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .amt span,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .amt span {
+	color: #000;
+	font-weight: 600;
+	font-size: 15px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper {
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 3px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .field,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .field {
+	padding: 0 10px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .field .select-money,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .field .select-money {
+	margin: 25px 0
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .field .select-money .price,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .field .select-money .price {
+	color: #43b02a;
+	border: 1px dashed;
+	padding: 8px 20px;
+	border-radius: 3px;
+	margin-left: 14px
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .field .select-money .price:first-of-type,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .field .select-money .price:first-of-type {
+	margin-left: 0
+}
+.loyalty_payment_wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .add-money-paytm,
+.payments-wrapper .paytm-addmoney-wrapper .paytm-addmoney .fields-wrapper .add-money-paytm {
+	background-color: #43b02a;
+	border: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: 17px;
+	width: 100%;
+	padding: 10px 0;
+	border-radius: 5px
+}
+.loyalty_payment_wrapper .comp-wrap,
+.payments-wrapper .comp-wrap {
+	position: absolute;
+	font-size: 14px;
+	top: -5px;
+	left: 0;
+	width: 100%;
+	background: url("/images/complimantart product shape.svg") no-repeat center/97%;
+	transform: translateY(-150px);
+	transition: all 445ms ease-in;
+	z-index: 200
+}
+.loyalty_payment_wrapper .comp-wrap.show,
+.payments-wrapper .comp-wrap.show {
+	transform: translateY(0);
+	display: block
+}
+.loyalty_payment_wrapper .comp-wrap .item-detail,
+.payments-wrapper .comp-wrap .item-detail {
+	position: relative;
+	padding: 20px 10px 20px 20px
+}
+.loyalty_payment_wrapper .comp-wrap .item-detail .img,
+.payments-wrapper .comp-wrap .item-detail .img {
+	width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0;
+	border-radius: 3px
+}
+.loyalty_payment_wrapper .comp-wrap .item-detail .img img,
+.payments-wrapper .comp-wrap .item-detail .img img {
+	width: 100%;
+	border-radius: 3px
+}
+.loyalty_payment_wrapper .comp-wrap .item-detail .name,
+.payments-wrapper .comp-wrap .item-detail .name {
+	display: inline-block;
+	vertical-align: top;
+	color: #6d6e71;
+	font-size: 13px;
+	color: #545454;
+	margin-left: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 40px;
+	width: 70%;
+	line-height: 1.2
+}
+.loyalty_payment_wrapper .comp-wrap .item-detail .name .pr-name,
+.payments-wrapper .comp-wrap .item-detail .name .pr-name {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden
+}
+.loyalty_payment_wrapper .comp-wrap .item-detail .name .detail,
+.payments-wrapper .comp-wrap .item-detail .name .detail {
+	line-height: 2
+}
+.loyalty_payment_wrapper .comp-wrap .item-detail .name .detail .dist,
+.payments-wrapper .comp-wrap .item-detail .name .detail .dist {
+	margin-left: 10px
+}
+.loyalty_payment_wrapper .comp-wrap .item-detail .name .detail .dist:first-of-type,
+.payments-wrapper .comp-wrap .item-detail .name .detail .dist:first-of-type {
+	margin-left: 0
+}
+.loyalty_payment_wrapper .comp-wrap .item-detail:after,
+.payments-wrapper .comp-wrap .item-detail:after {
+	content: '';
+	display: block;
+	clear: both
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, .75);
+    z-index: 400;
+    display: none;
+}
+.loader span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(https://d2407na1z3fc0t.cloudfront.net/Banner/licious_smile.png) no-repeat center;
+}
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank button {
+    padding: 15px 0;
+    background-color: #fff;
+    border: 1px solid #43b02a;
+    border-radius: 3px;
+    color: #43b02a;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+}
+.payments-wrapper .payment-option-wrapper .payment-types .pay-method .pay-section.netbank .select-bank .choose-bank {
+    border: 1px solid #cbcbcb;
+    color: #6d6e71;
+}
+.lock-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    z-index: 175;
+    display: block!important;
+}

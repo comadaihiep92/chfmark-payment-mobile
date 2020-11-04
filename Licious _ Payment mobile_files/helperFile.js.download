@@ -1,0 +1,1 @@
+var throttle=function(a,b){var c;return function(){var d=arguments,e=this;c||(a.apply(e,d),c=!0,setTimeout(function(){return c=!1},b))}};

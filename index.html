@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://m.licious.in/customer/payments -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Styles -->
+  <!-- <link rel="stylesheet" href="./images/main.css"> -->
+  <link rel="stylesheet" href="./css/widget.css">
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <title> Licious | Payment
+  </title>
+
+  <!-- 
+  <link href="./Licious _ Payment mobile_files/widget.css" rel="stylesheet">
+  <link href="./Licious _ Payment mobile_files/cb.css" rel="stylesheet"> -->
+</head>
+
+<body>
+
+  <div class="msite-whole-wrapper">
+    <div class="loader" style="display: none;">
+      <span></span>
+    </div>
+    <div id="mainWrapper">
+      <div class="empty-cart">
+        <div class="empty-image">
+          <img data-src="/images/empty_cart_icon.png">
+        </div>
+        <div class="empty-status">
+          <div class="empty-header">Your cart awaits your next meal</div>
+          <div href="/" class="continue-shop">Continue shopping</div>
+        </div>
+      </div>
+      <div class="checkout-alert">
+        <div class="checkout-msg error">Currently not available </div>
+      </div>
+      <div class="toast"></div>
+      <div class="notify-alert">
+      </div>
+      <div class="add_message">
+        <img src="./images/info_2x.png" alt="Info">
+        <span>×</span>
+      </div>
+
+      <div class="oos-alert">
+        <div class="alert-box">
+          <div class="header">
+            <div><img src="./images/alert.png" alt="Alert!"></div>
+            <div>Alert [Change in Delivery address]</div>
+          </div>
+          <div class="content">
+            <p class="message">
+              We have detected a change in your Delivery address.
+              The Above will affect the Product availability, pricing, offers and more..
+            </p>
+          </div>
+          <div class="ctas">
+            <button class="btn-wired change-addr"> Change Address</button>
+            <button class="btn-wired select-addr"> Select Address</button>
+            <button class="btn-wired dismiss"> Dismiss</button>
+            <button class="btn-cont btn-dark continue-shopping"> Continue Shopping</button>
+            <button class="btn-dark review-cart"> Review Cart</button>
+            <button class="btn-dark go-cart"> Review Cart</button>
+            <button class="btn-dark view-cart"> View Cart</button>
+            <button class="btn-wired delivery_slot">Ok</button>
+            <button class="btn-wired load-money-failed">Ok</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="checkout-oos-alert">
+        <div class="alert-box">
+          <div class="header">
+            Forgot to select delivery slots?
+          </div>
+          <div class="content">
+            <p class="message">
+              Please select the time-slots for deliveries
+            </p>
+          </div>
+          <div class="ctas">
+            <button class="btn-cont btn-dark continue-shopping"> Continue Shopping</button>
+            <button class="btn-dark review-cart"> Review Cart</button>
+            <button class="btn-dark viewcart"> View Cart</button>
+            <button class="btn-wired change-addr"> Change Address</button>
+            <button class="btn-wired select-addr"> Select Address</button>
+            <button class="btn-wired dismiss"> Dismiss</button>
+            <button class="btn-wired ok"> Ok</button>
+            <button class="btn-wired remove-cpn"> Remove Coupon</button>
+            <button class="btn-dark apply-cpn">Continue</button>
+            <button class="btn-wired cancelbtn"> Cancel</button>
+            <button class="btn-dark delivery-waived"> Ok</button>
+            <button class="btn-dark load-money-failed"> Ok</button>
+            <button class="btn-wired upi-stay"> Stay</button>
+            <button class="btn-dark upi-leave"> Leave</button>
+            <button class="btn-wired reload-page">Ok</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ll-coupon-failure-popup">
+
+      </div>
+      <div class="page-header">
+        <a><span class="back-button"><img src="./images/left-arrow.png"></span></a>
+        <span class="title style-bold">Choose payment option</span>
+      </div>
+
+      <div class="payments-wrapper">
+        <div class="payment-option-wrapper">
+          <div class="payment-header">Payment Method</div>
+          <div class="auto_renew_toast" style="display: none;">
+
+          </div>
+          <ul class="payment-types">
+            <li class="pay-method paytm pp show" data-msg="">
+
+              <div class="paytm-details">
+                <div class="method-type">
+
+
+                  <span class="pay-img"><img src="./images/paytm.png"></span><span class="pay-before">&nbsp; (Includes
+                    food wallet) </span><span class="pay-name">9957765033</span><span class="pay-after">&nbsp; (Includes
+                    food wallet) </span>
+                </div>
+                <div class="paytm-description">
+                  <div class="paytm-verified">
+                    <div class="inline-loader">
+                      <img src="./images/preloader.gif" class="paytm-inline-loader-img">
+                    </div>
+                    <div class="paytm-inline-loader">
+                      <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+                        <title>refresh</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                          <path
+                            d="M0,12 C0,5.37221923 5.37258834,0 11.9998791,0 C18.6273512,0 24,5.37221923 24,12 C24,18.6273575 18.6273512,24 11.9998791,24 C5.37258834,24 0,18.6273575 0,12 Z"
+                            id="path-1"></path>
+                          <filter x="-29.2%" y="-20.8%" width="158.3%" height="158.3%" filterUnits="objectBoundingBox"
+                            id="filter-2">
+                            <feoffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feoffset>
+                            <fegaussianblur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1">
+                            </fegaussianblur>
+                            <fecolormatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.131453804 0" type="matrix"
+                              in="shadowBlurOuter1"></fecolormatrix>
+                          </filter>
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="3-copy" transform="translate(-223.000000, -275.000000)">
+                            <g id="refresh" transform="translate(227.000000, 277.000000)">
+                              <g id="Fill-1">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                              </g>
+                              <path
+                                d="M20.3770389,8.21027455 C19.883271,8.21125447 19.3895627,8.21290808 18.8958543,8.213888 C17.7853834,5.65758623 15.6056585,3.81068439 12.8522371,3.36788361 C9.78458875,2.87431079 6.84852442,4.33726822 5.09778951,6.91071857 C4.32021532,8.05361004 6.14765783,9.1236813 6.91867072,7.99040528 C9.31975017,4.46092172 14.4466936,4.77982402 16.5534687,8.21982876 C16.0972792,8.22105365 15.6412685,8.22221731 15.1850789,8.22319723 C15.0573721,8.22368719 14.9667665,8.2820536 14.9105778,8.36436677 C14.8190178,8.46505342 14.7843025,8.61265368 14.8800976,8.76533727 C15.7489336,10.1495337 16.6175309,11.5335465 17.4864266,12.9175592 C17.632505,13.1500449 17.9475073,13.1481463 18.0922139,12.9151094 C18.954071,11.5268095 19.8161667,10.1383259 20.6780835,8.75002604 C20.8206428,8.52035758 20.6328702,8.20953961 20.3770389,8.21027455 Z"
+                                id="Fill-2" fill="#43b02a"></path>
+                              <path
+                                d="M16.5368626,15.9707464 C14.1556647,19.5022397 9.09142353,19.2128216 6.95585131,15.820202 C7.39273116,15.8190288 7.82961102,15.8177938 8.26672934,15.8168676 C8.39389429,15.8163736 8.484275,15.7579589 8.54037543,15.6752769 C8.63212736,15.5734526 8.66730191,15.4246372 8.57137673,15.2702645 C7.70316149,13.8748581 6.83500586,12.4792664 5.96679061,11.0841071 C5.82102489,10.8493987 5.50594437,10.8513129 5.36131138,11.0865153 C4.49965411,12.4859971 3.63799683,13.8859729 2.77633955,15.2859487 C2.63403166,15.5175079 2.82170876,15.8308229 3.07723101,15.8300819 C3.58606965,15.8286617 4.09490829,15.8274267 4.60374693,15.8260064 C5.72462277,18.3613631 7.88416138,20.1896925 10.6067313,20.6313222 C13.6728791,21.1289582 16.6074502,19.6542043 18.3568774,17.0593214 C19.1339965,15.906836 17.3074834,14.8278938 16.5368626,15.9707464 Z"
+                                id="Fill-3" fill="#43b02a"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <span class="amount"></span>
+                    <label class="check-container paytm-check">
+                      <input type="checkbox" class="paytm-pay" id="paytm-pay" data-method="paytm"
+                        data-methodname="Paytm">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <button class="check-otp" style="display: inline-block;">Link</button>
+                </div>
+              </div>
+              <div class="paytm-verification">
+                <p class="text-wrap get-otp">
+                  <input type="Number" class="paytm-otp" required=""><label>Enter OTP</label>
+                  <span class="resent-otp">Resend</span>
+                </p>
+                <p class="error-paytm-otp" style="float: left; font-size: 11px; color: #43b02a;"></p>
+                <button class="verify">Verify</button>
+              </div>
+              <p class="error-amt" style="display: none;">Insufficient balance. Tap place order to add money and pay</p>
+
+            </li>
+            <li class="pay-method credit-debit razorpay_cards show">
+              <div class="pay-details ccdc" data-method="ccdc" data-methodname="Card" data-isactive="true"
+                data-msg="Cards is experiencing low success rates currently, please use an alternate payment method.">
+                <div class="method-type">
+
+
+                  <span class="pay-img"><img src="./images/pay_ccdc.png"></span><span class="pay-name">Credit / Debit
+                    cards</span></div>
+                <div class="pay-description"><span class="pay-arrow"><img src="./images/dropdown1_icon.png"
+                      class=""></span></div>
+              </div>
+              <div class="pay-section ccdc">
+                <p class="text-wrap"><input type="text" class="card-number" maxlength="16" id="card_number"
+                    required=""><label>Enter card number</label></p>
+                <p class="text-wrap"><input type="text" class="card-owner" id="name_on_card" required=""><label>Name on
+                    the card</label></p>
+                <p class="text-wrap card-expiry-month"><input type="text" class="ex-month" id="expiry_month"
+                    maxlength="2" required=""><label>MM</label></p>
+                <p class="text-wrap card-expiry-year"><input type="text" class="ex-year" maxlength="4" id="expiry_year"
+                    required=""><label>YYYY</label></p>
+                <p class="text-wrap cvv-number-card"><input type="password" maxlength="4" class="cvv" id="card_cvv"
+                    required=""><label>CVV</label></p>
+                <div class="select-save-card">
+                  <label class="check-container">
+                    <input type="checkbox" class="check-payment" id="secure-card">
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="label-name">Securely save card details</div>
+                </div>
+
+
+
+              </div>
+            </li>
+            <li class="pay-method netbanking razorpay_netbanking show">
+              <div class="pay-details netbank" data-method="netbanking" data-methodname="netbanking"
+                data-isactive="true"
+                data-msg="Netbanking is experiencing low success rates currently, please use an alternate payment method.">
+                <div class="method-type">
+
+
+                  <span class="pay-img"><img src="./images/pay_nb.png"></span><span class="pay-name">Netbanking</span>
+                </div>
+                <div class="pay-description"><span class="pay-arrow"><img src="./images/dropdown1_icon.png"
+                      class=""></span></div>
+              </div>
+              <div class="pay-section netbank">
+                <div class="nb-text">Popular Banks</div>
+                <ul class="popular-bank">
+
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon"><img src="./images/HDFC.png"></span><span
+                        class="bank-name">HDFC
+                        Bank</span><span class="bank-promo" style="margin-left: 10px;color:#417505;"></span></div>
+                    <div class="right"><label class="check-container"><input type="checkbox"
+                          class="check-payment sub-method imp-banks" data-paysource="HDFC"><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon"><img src="./images/icici.png"></span><span
+                        class="bank-name">ICICI
+                        Bank</span><span class="bank-promo" style="margin-left: 10px;color:#417505;"></span></div>
+                    <div class="right"><label class="check-container"><input type="checkbox"
+                          class="check-payment sub-method imp-banks" data-paysource="ICIC"><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon"><img src="./images/AXIB_1.png"></span><span
+                        class="bank-name">Axis
+                        Bank</span><span class="bank-promo" style="margin-left: 10px;color:#417505;"></span></div>
+                    <div class="right"><label class="check-container"><input type="checkbox"
+                          class="check-payment sub-method imp-banks" data-paysource="UTIB"><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon"><img src="./images/kotak.png"></span><span
+                        class="bank-name">Kotak
+                        Bank</span><span class="bank-promo" style="margin-left: 10px;color:#417505;"></span></div>
+                    <div class="right"><label class="check-container"><input type="checkbox"
+                          class="check-payment sub-method imp-banks" data-paysource="KKBK"><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon"><img src="./images/yes.png"></span><span
+                        class="bank-name">Yes
+                        Bank</span><span class="bank-promo" style="margin-left: 10px;color:#417505;"></span></div>
+                    <div class="right"><label class="check-container"><input type="checkbox"
+                          class="check-payment sub-method imp-banks" data-paysource="YESB"><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon"><img src="./images/SBI.png"></span><span
+                        class="bank-name">State Bank of
+                        India</span><span class="bank-promo" style="margin-left: 10px;color:#417505;"></span></div>
+                    <div class="right"><label class="check-container"><input type="checkbox"
+                          class="check-payment sub-method imp-banks" data-paysource="SBIN"><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon"><img src="./images/andhra.png"></span><span
+                        class="bank-name">Andhra
+                        Bank</span><span class="bank-promo" style="margin-left: 10px;color:#417505;"></span></div>
+                    <div class="right"><label class="check-container"><input type="checkbox"
+                          class="check-payment sub-method imp-banks" data-paysource="ANDB"><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon"><img src="./images/canarabank.png"></span><span
+                        class="bank-name">Canara
+                        Bank</span><span class="bank-promo" style="margin-left: 10px;color:#417505;"></span></div>
+                    <div class="right"><label class="check-container"><input type="checkbox"
+                          class="check-payment sub-method imp-banks" data-paysource="CNRB"><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon"><img src="./images/bob.png"></span><span
+                        class="bank-name">Bank of
+                        Baroda</span><span class="bank-promo" style="margin-left: 10px;color:#417505;"></span></div>
+                    <div class="right"><label class="check-container"><input type="checkbox"
+                          class="check-payment sub-method imp-banks" data-paysource="BARB_R"><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                </ul>
+                <p class="other-bank">other Bank</p>
+                <div class="select-bank">
+                  <button class="add-card choose-bank"><span class="bank-name-select">Select Bank</span><span
+                      class="img"><img src="./images/down-icon.png" class=""></span></button>
+                </div>
+                <div class="down-info">
+                  <div class="bank-list">
+                    <ul>
+
+                      <li class="sub-method" data-paysource="AUBL" data-bankname="AU Small Finance Bank"><span
+                          class="">AU Small Finance Bank</span></li>
+                      <li class="sub-method" data-paysource="AIRP" data-bankname="Airtel Payments Bank"><span
+                          class="">Airtel Payments Bank</span></li>
+                      <li class="sub-method" data-paysource="ALLA" data-bankname="Allahabad Bank"><span
+                          class="">Allahabad Bank</span></li>
+                      <li class="sub-method" data-paysource="ANDB" data-bankname="Andhra Bank"><span class="">Andhra
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="UTIB" data-bankname="Axis Bank"><span class="">Axis
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="BBKM" data-bankname="Bank of Bahrein and Kuwait"><span
+                          class="">Bank of Bahrein and Kuwait</span></li>
+                      <li class="sub-method" data-paysource="BARB_R" data-bankname="Bank of Baroda - Retail Banking">
+                        <span class="">Bank of Baroda - Retail Banking</span></li>
+                      <li class="sub-method" data-paysource="MAHB" data-bankname="Bank of Maharashtra"><span
+                          class="">Bank of Maharashtra</span></li>
+                      <li class="sub-method" data-paysource="CNRB" data-bankname="Canara Bank"><span class="">Canara
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="CSBK" data-bankname="Catholic Syrian Bank"><span
+                          class="">Catholic Syrian Bank</span></li>
+                      <li class="sub-method" data-paysource="CBIN" data-bankname="Central Bank of India"><span
+                          class="">Central Bank of India</span></li>
+                      <li class="sub-method" data-paysource="COSB" data-bankname="Cosmos Co-operative Bank"><span
+                          class="">Cosmos Co-operative Bank</span></li>
+                      <li class="sub-method" data-paysource="DCBL" data-bankname="DCB Bank"><span class="">DCB
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="BKDN" data-bankname="Dena Bank"><span class="">Dena
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="DEUT" data-bankname="Deutsche Bank"><span class="">Deutsche
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="DBSS" data-bankname="Development Bank of Singapore"><span
+                          class="">Development Bank of Singapore</span></li>
+                      <li class="sub-method" data-paysource="DLXB" data-bankname="Dhanlaxmi Bank"><span
+                          class="">Dhanlaxmi Bank</span></li>
+                      <li class="sub-method" data-paysource="ESFB" data-bankname="Equitas Small Finance Bank"><span
+                          class="">Equitas Small Finance Bank</span></li>
+                      <li class="sub-method" data-paysource="FDRL" data-bankname="Federal Bank"><span class="">Federal
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="FSFB" data-bankname="Fincare Small Finance Bank"><span
+                          class="">Fincare Small Finance Bank</span></li>
+                      <li class="sub-method" data-paysource="HDFC" data-bankname="HDFC Bank"><span class="">HDFC
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="ICIC" data-bankname="ICICI Bank"><span class="">ICICI
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="IBKL" data-bankname="IDBI"><span class="">IDBI</span></li>
+                      <li class="sub-method" data-paysource="IDFB" data-bankname="IDFC FIRST Bank"><span class="">IDFC
+                          FIRST Bank</span></li>
+                      <li class="sub-method" data-paysource="IDIB" data-bankname="Indian Bank"><span class="">Indian
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="IOBA" data-bankname="Indian Overseas Bank"><span
+                          class="">Indian Overseas Bank</span></li>
+                      <li class="sub-method" data-paysource="INDB" data-bankname="Indusind Bank"><span class="">Indusind
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="JAKA" data-bankname="Jammu and Kashmir Bank"><span
+                          class="">Jammu and Kashmir Bank</span></li>
+                      <li class="sub-method" data-paysource="JSFB" data-bankname="Jana Small Finance Bank"><span
+                          class="">Jana Small Finance Bank</span></li>
+                      <li class="sub-method" data-paysource="JSBP" data-bankname="Janata Sahakari Bank (Pune)"><span
+                          class="">Janata Sahakari Bank (Pune)</span></li>
+                      <li class="sub-method" data-paysource="KARB" data-bankname="Karnataka Bank"><span
+                          class="">Karnataka Bank</span></li>
+                      <li class="sub-method" data-paysource="KVBL" data-bankname="Karur Vysya Bank"><span class="">Karur
+                          Vysya Bank</span></li>
+                      <li class="sub-method" data-paysource="KKBK" data-bankname="Kotak Mahindra Bank"><span
+                          class="">Kotak Mahindra Bank</span></li>
+                      <li class="sub-method" data-paysource="LAVB_C"
+                        data-bankname="Lakshmi Vilas Bank - Corporate Banking"><span class="">Lakshmi Vilas Bank -
+                          Corporate Banking</span></li>
+                      <li class="sub-method" data-paysource="LAVB_R"
+                        data-bankname="Lakshmi Vilas Bank - Retail Banking"><span class="">Lakshmi Vilas Bank - Retail
+                          Banking</span></li>
+                      <li class="sub-method" data-paysource="NKGS" data-bankname="NKGSB Co-operative Bank"><span
+                          class="">NKGSB Co-operative Bank</span></li>
+                      <li class="sub-method" data-paysource="ORBC"
+                        data-bankname="PNB (Erstwhile-Oriental Bank of Commerce)"><span class="">PNB (Erstwhile-Oriental
+                          Bank of Commerce)</span></li>
+                      <li class="sub-method" data-paysource="UTBI" data-bankname="PNB (Erstwhile-United Bank of India)">
+                        <span class="">PNB (Erstwhile-United Bank of India)</span></li>
+                      <li class="sub-method" data-paysource="PSIB" data-bankname="Punjab &amp; Sind Bank"><span
+                          class="">Punjab &amp; Sind Bank</span></li>
+                      <li class="sub-method" data-paysource="PUNB_R"
+                        data-bankname="Punjab National Bank - Retail Banking"><span class="">Punjab National Bank -
+                          Retail Banking</span></li>
+                      <li class="sub-method" data-paysource="RATN" data-bankname="RBL Bank"><span class="">RBL
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="SRCB" data-bankname="Saraswat Co-operative Bank"><span
+                          class="">Saraswat Co-operative Bank</span></li>
+                      <li class="sub-method" data-paysource="SVCB" data-bankname="Shamrao Vithal Co-operative Bank">
+                        <span class="">Shamrao Vithal Co-operative Bank</span></li>
+                      <li class="sub-method" data-paysource="SIBL" data-bankname="South Indian Bank"><span
+                          class="">South Indian Bank</span></li>
+                      <li class="sub-method" data-paysource="SCBL" data-bankname="Standard Chartered Bank"><span
+                          class="">Standard Chartered Bank</span></li>
+                      <li class="sub-method" data-paysource="SBBJ" data-bankname="State Bank of Bikaner and Jaipur">
+                        <span class="">State Bank of Bikaner and Jaipur</span></li>
+                      <li class="sub-method" data-paysource="SBHY" data-bankname="State Bank of Hyderabad"><span
+                          class="">State Bank of Hyderabad</span></li>
+                      <li class="sub-method" data-paysource="SBIN" data-bankname="State Bank of India"><span
+                          class="">State Bank of India</span></li>
+                      <li class="sub-method" data-paysource="SBMY" data-bankname="State Bank of Mysore"><span
+                          class="">State Bank of Mysore</span></li>
+                      <li class="sub-method" data-paysource="STBP" data-bankname="State Bank of Patiala"><span
+                          class="">State Bank of Patiala</span></li>
+                      <li class="sub-method" data-paysource="SBTR" data-bankname="State Bank of Travancore"><span
+                          class="">State Bank of Travancore</span></li>
+                      <li class="sub-method" data-paysource="SYNB" data-bankname="Syndicate Bank"><span
+                          class="">Syndicate Bank</span></li>
+                      <li class="sub-method" data-paysource="TMBL" data-bankname="Tamilnadu Mercantile Bank"><span
+                          class="">Tamilnadu Mercantile Bank</span></li>
+                      <li class="sub-method" data-paysource="TNSC"
+                        data-bankname="Tamilnadu State Apex Co-operative Bank"><span class="">Tamilnadu State Apex
+                          Co-operative Bank</span></li>
+                      <li class="sub-method" data-paysource="UCBA" data-bankname="UCO Bank"><span class="">UCO
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="UBIN" data-bankname="Union Bank of India"><span
+                          class="">Union Bank of India</span></li>
+                      <li class="sub-method" data-paysource="CORP"
+                        data-bankname="Union Bank of India (Erstwhile Corporation Bank)"><span class="">Union Bank of
+                          India (Erstwhile Corporation Bank)</span></li>
+                      <li class="sub-method" data-paysource="VIJB" data-bankname="Vijaya Bank"><span class="">Vijaya
+                          Bank</span></li>
+                      <li class="sub-method" data-paysource="YESB" data-bankname="Yes Bank"><span class="">Yes
+                          Bank</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="pay-method other-wallet razorpay_wallets show">
+              <div class="pay-details wallet" data-method="other_wallets" data-methodname="wallet" data-isactive="true"
+                data-msg="">
+                <div class="method-type">
+
+
+                  <span class="pay-img"><img src="./images/pay_wallet.png"></span><span class="pay-name">Other
+                    wallets</span></div>
+                <div class="pay-description"><span class="pay-arrow"><img src="./images/dropdown1_icon.png"
+                      class="rotate"></span></div>
+              </div>
+              <div class="pay-section otherwallet">
+                <ul class="popular-bank">
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon" style="width: 50px;"><img
+                          src="./images/amaznpay.png"></span><span class="bank-promo"
+                        style="margin-left: 10px ; color:#417505; font-size: 10px;"></span></div>
+                    <div class="right"> <label class="check-container"><input type="checkbox"
+                          class="wallet_check check-payment sub-method o_wallet" data-paysource="amazonpay"
+                          data-check="true"
+                          data-msg="Amazon is experiencing low success rates currently, please use an altern ate payment method."><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon" style="width: 50px;"><img
+                          src="./images/new-ola2.png"></span><span class="bank-promo"
+                        style="margin-left: 10px ; color:#417505; font-size: 10px;"></span></div>
+                    <div class="right"> <label class="check-container"><input type="checkbox"
+                          class="wallet_check check-payment sub-method o_wallet" data-paysource="olamoney"
+                          data-check="true"
+                          data-msg="OlaMoney is experiencing low success rates currently, please use an alternate payment method."><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                  <li class="bank-detail">
+                    <div class="left"><span class="bank-icon" style="width: 50px;"><img
+                          src="./images/airtelmoney.png"></span><span class="bank-promo"
+                        style="margin-left: 10px ; color:#417505; font-size: 10px;"></span></div>
+                    <div class="right"> <label class="check-container"><input type="checkbox"
+                          class="wallet_check check-payment sub-method o_wallet" data-paysource="airtelmoney"
+                          data-check="true"
+                          data-msg="Airtel is experiencing low success rates currently, please use an alternate payment method.."><span
+                          class="checkmark"></span></label></div>
+                  </li>
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="pay-method razorpay-upi show">
+              <div class="pay-details-upi upi-pay" data-isactive="true">
+                <p class="upi-header">Pay using UPI</p>
+                <div class="upi-container" data-msg=""><button class="upi-card g_pay" data-method="upi"
+                    data-methodname="upi" data-paysource="g_pay" data-index="0" data-enabled="true">
+                    <div class="upi-image center-fit"><img src="./images/upi_gpay.png" class=""><span></span></div>
+                    <p class="upi-offer"></p>
+                    <p class="dis-msg"></p>
+                    <div class="button-check"></div>
+                  </button><button class="upi-card paytm_upi" data-method="upi" data-methodname="upi"
+                    data-paysource="paytm_upi" data-index="1" data-enabled="true">
+                    <div class="upi-image center-fit"><img src="./images/paytm_upi2.png" class=""><span>Paytm</span>
+                    </div>
+                    <p class="upi-offer"></p>
+                    <p class="dis-msg"></p>
+                    <div class="button-check"></div>
+                  </button><button class="upi-card more_upi" data-method="upi" data-methodname="upi"
+                    data-paysource="more_upi" data-index="2" data-enabled="true">
+                    <div class="upi-image center-fit"><img src="./images/more_upi_v2.png" class=""><span>More UPI</span>
+                    </div>
+                    <p class="upi-offer"></p>
+                    <p class="dis-msg"></p>
+                    <div class="button-check"></div>
+                  </button></div>
+                <div class="vpa-section">
+                  <p class="upi-notify">Enter your VPA ID / UPI ID &amp; Tap place order to proceed</p>
+                  <input type="text" class="user-vpa" id="user-vpa" placeholder="eg. Johnsmith@upi, 9881529278@axisbank"
+                    autofocus="">
+                  <p class="error-upi-vpa" style="float: left; font-size: 11px; color: #43b02a;"></p>
+                </div>
+              </div>
+            </li>
+
+            <li class="pay-method pay-later pod show" style="display: list-item;">
+
+              <div class="pay-details pay-later" data-method="pay-later" data-methodname="Pay on Delivery"
+                data-isactive="false" data-msg="">
+                <div class="method-type">
+
+
+                  <span class="pay-img"><img src="./images/pay_delivery.png"></span><span class="pay-name">Pay Online on
+                    Delivery</span></div>
+                <div class="pay-description"><span class="pay-arrow"><img src="./images/dropdown1_icon.png"></span>
+                </div>
+              </div>
+              <div class="pay-section paylater">
+                <div class="pay-later">
+                  <img src="./images/pod.png">
+                </div>
+                <div class="paylater-check">
+                  <label class="check-container">
+                    <input type="checkbox" class="check-payment" id="pod">
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="label-name">Pay online on delivery using wallets,
+                    card and netbanking</div>
+                </div>
+              </div>
+            </li>
+            <li class="pay-method COD cod show" style="display: list-item;">
+              <div class="pay-details cash" data-method="cod" data-methodname="Cash on Delivery" data-isactive="false"
+                data-msg="As a safety measure, orders can be placed using only pre-payment options">
+                <div class="method-type">
+
+
+                  <span class="pay-img"><img src="./images/pay_cod.png"></span><span class="pay-name">Cash on
+                    Delivery</span></div>
+                <div class="pay-description"><span class="pay-arrow"><img src="./images/dropdown1_icon.png"></span>
+                </div>
+
+              </div>
+              <div class="pay-section cash">
+                <div class="cod">
+                  <img src="./images/cash-img.png">
+                </div>
+                <div class="cod-check">
+                  <label class="check-container">
+                    <input type="checkbox" class="check-payment" id="cod">
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="label-name">Pay using cash</div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+          <div class="place-order">
+            <div class="total style-bold" style="margin-top: 5px;">
+              <span class="pay-text style-bold">Total : </span> ₹ <span class="style-bold pay-amount">182.19</span><span
+                class="payment-info"><img src="./images/information.png"></span>
+              <!-- <div class="delivery-fee" style="font-size: 10px;"></div> -->
+            </div>
+            <button class="order" data-payable_amount="182.19" hasloyaltyinorder="true" loyalty_final_amt="182.19"
+              data-method="pay-later" data-methodname="Pay on Delivery">
+              <div class="order-text"><span class="style-bold font-15 placeorder">Place Order</span></div>
+              <div class="go-next"><img src="./images/side-arrow-order.png"></div>
+            </button>
+          </div>
+
+
+
+          <div class="payment-break-down">
+            <div class="header">Bill Details
+
+            </div>
+            <ul class="payment-charges">
+              <li class="pay_list ">
+                <div class="key"><span>Subtotal</span><span class="message"></span></div>
+                <div class="value  ">103.2</div>
+              </li>
+              <li class="pay_list ">
+                <div class="key"><span>Licious Meatopia (1 month plan)</span><span class="message"></span></div>
+                <div class="value  ">69</div>
+              </li>
+              <li class="pay_list ">
+                <div class="key"><span>Contactless Service Charges</span><span class="message"></span></div>
+                <div class="value  ">10</div>
+              </li>
+              <li class="pay_list ">
+                <div class="key"><span>Delivery Charge</span><span class="message" style="color:#417505">Free Delivery
+                    because you have added Meatopia.</span></div>
+                <div class="value  ">0</div>
+              </li>
+              <li class="pay_list ">
+                <div class="key"><span>Discount</span><span class="message"></span></div>
+                <div class="value  ">0</div>
+              </li>
+              <li class="pay_list ">
+                <div class="key"><span>Licious Wallet</span><span class="message"></span></div>
+                <div class="value  L_wallet">0</div>
+              </li>
+              <li>
+                <div class="seperator"></div>
+              </li>
+              <li>
+                <div class="key-total"><span>Total</span></div>
+                <div class="value-total undefined">182.19</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="order-failed-wrapper">
+            <div class="order-failed">
+              <div class="failed-image">
+                <img src="./images/error_pay.png">
+                <div class="failed-status">Order creation failed</div>
+                <div class="failed-text">Your order is not created due to unforeseen issues</div>
+              </div>
+              <!-- <div class="try-again">Back to cart</div> -->
+              <!-- <div  class="pay-by-cash" style="display: none;" data-method="cod" data-methodname="Cash on Delivery">Pay by cash</div> -->
+              <div class="pay-on-delivery" data-method="pod" data-methodname="Pay on Delivery"
+                style="display: inline-block;">Pay online on Delivery</div>
+              <div class="try-again">Cancel</div>
+            </div>
+
+          </div>
+
+          <div class="custom-paypal-pop-wrapper">
+            <div class="custom-popup">
+              <div class="popup-image">
+                <img src="./images/error_pay.png">
+                <div class="popup-status">Order creation failed</div>
+                <div class="popup-text"></div>
+              </div>
+              <!-- <div class="try-again">Back to cart</div> -->
+              <!-- <div  class="pay-by-cash" style="display: none;" data-method="cod" data-methodname="Cash on Delivery">Pay by cash</div> -->
+              <div class="popup-btn-1" data-method="pod" data-methodname="Pay on Delivery">Pay online on Delivery</div>
+              <div class="popup-btn-2">Cancel</div>
+            </div>
+          </div>
+
+          <div class="paytm-addmoney-wrapper lock-screen">
+            <div class="paytm-addmoney">
+              <div class="wrapper"><span class="icon-wrap"><img src="./images/paytm.png" class="paytm-icon"></span><span
+                  class="cross-wrap"><img src="./images/002_cancel.png" class="cancel-img"></span></div>
+              <p class="amt">Please add min. <span class="paytm_load_amt"></span> to place order</p>
+              <div class="fields-wrapper">
+                <div class="field">
+                  <p class="text-wrap"><input type="text" class="money-added" required=""><label>Enter Amount</label>
+                  </p>
+                  <div class="select-money"><span class="price" value="600">₹ 600</span><span class="price"
+                      value="700">₹ 700</span><span class="price" value="1000">₹ 1000</span></div>
+                </div>
+                <button class="add-money-paytm">Add money <p style="font-size: 10px;">and Pay</p></button>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="upi-processing-wrapper">
+            <div class="page-header">
+              <a><span class="close-upi-button"><img src="./images/cross.png"></span></a>
+              <span class="title style-bold">UPI Transaction</span>
+            </div>
+            <div class="upi-header-wrap">
+              <div class="upi-type">
+                <div class="upi-type-image">
+                  <img src="./images/upi_gpay.png">
+                </div>
+                <div class="upi-name"></div>
+              </div>
+              <div class="upi-bank"></div>
+              <p class="upi-desc">You will receive collect request from Licious in UPI app via notification.</p>
+              <div class="timer-wrap">
+                <div class="upi-loader"></div>
+                <div class="upi-timer"></div>
+              </div>
+              <div class="upi-notification">If Notifications are disabled, open UPI app and accept request to place
+                order</div>
+            </div>
+          </div>
+
+        </div>
+        <button class="pay_btn_sub" style="display:none">
+          <div>Confirm payment method</div>
+        </button>
+
+        <script src="./js/custom.js"></script>
+
+      </div>
+      <form method="post" id="paytmForm" action="#" accept-charset="utf-8" style="margin-top:15%;">
+        <input type="hidden" name="_token" value="8Gil297KAL0toQegR4mLZnYQF2le77BciWxlEzyQ">
+        <input id="paytmtxtamount" name="paytmtxtamount" value="" hidden="true">
+        <input id="paytmorderid" name="paytmorderid" value="" hidden="true">
+        <input id="paytmcustid" name="paytmcustid" value="" hidden="true">
+        <input id="paytmssotoken" name="paytmssotoken" value="" hidden="true">
+        <input id="paytmmobile" name="paytmmobile" value="" hidden="true">
+        <input id="callbackURL" name="callbackURL" value="" hidden="true">
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
